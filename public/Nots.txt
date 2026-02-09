@@ -1,0 +1,21 @@
+root --> index.html içinden geliyor.
+<div id="root"></div> body içerisinde sadece root div'i var.
+Yani mantık
+    - index.html açıldı <div id='root' u gördü. 
+    - index.js devreye giriyor.
+        - index.js nerede devreye giriyor webpack denilen bir olay ile devreye giriyor isteğe balı araştırabilir.
+    - index.js devreye giriyor ReactDom'u render ediyor. (DOM -> uygulamamızın render oluduğunda arka planda çalışan html yapısı)
+    - Mantık root'a APP'nin monte edilmesi.
+
+* npm start -> uygulamamızı açmaya yani bir test ortamında çalıştırmaya yarıyor. 
+
+container component denirse bir üst div'e almamız gerekebilir
+
+- App.js içindeki div içindeki kodları sildik.
+pages -> sayfalar için pages klasörünü kullanabiliriz
+layout -> ekranlar gibi
+ - layout içine Dashboad.js componentini ekledik. Baş harfi büyük yazıyoruz Pascalcase
+ - rfc --> react functional component snippte ile bir component yaratıyoruz içine Ana sayfa yazdık.
+ Bu Dashboad componentini APP içinde çağıralım.
+ import Dashboard from './layout/Dashboard';
+ <Dashboard /> bu şekilde çağırabiliriz import'u ve çağırma şekli
