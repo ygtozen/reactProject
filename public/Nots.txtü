@@ -1,0 +1,10 @@
+root --> index.html içinden geliyor.
+<div id="root"></div> body içerisinde sadece root div'i var.
+Yani mantık
+    - index.html açıldı <div id='root' u gördü. 
+    - index.js devreye giriyor.
+        - index.js nerede devreye giriyor webpack denilen bir olay ile devreye giriyor isteğe balı araştırabilir.
+    - index.js devreye giriyor ReactDom'u render ediyor. (DOM -> uygulamamızın render oluduğunda arka planda çalışan html yapısı)
+    - Mantık root'a APP'nin monte edilmesi.
+
+* npm start -> uygulamamızı açmaya yani bir test ortamında çalıştırmaya yarıyor.
