@@ -29,3 +29,5 @@ npm install semantic-ui-react semantic-ui-css komutu kurulum yapıyoruz
 
 Dashboad'a bir butona ekledik sitede göründüğü gibi gelmesi içinde import 'semantic-ui-css/semantic.min.css';
 importunu ekledik.
+
+1.57.36 axios kurulumu yapılacak
