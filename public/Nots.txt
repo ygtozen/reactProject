@@ -31,3 +31,13 @@ Dashboad'a bir butona ekledik sitede göründüğü gibi gelmesi içinde import 
 importunu ekledik.
 
 1.57.36 axios kurulumu yapılacak
+npm install axios --> react'ın kendi içerisinde HTTP requestler yok bizde js dünyasında çok populer olan Axios kütüphanesi kullanıyoruz. API'lere istekte bulunmamızı
+sağlan paketimizin ismi. Kendisi bir xml http request.
+Bizim uygulamamız üstte bir navitagion, sepeti kategroy ler yanda ürünler bunu şekilde çiz.
+navigation, sepet, kategroy'ler layout ile ilgili layoutu yapılandıran componetlerimiz ama ürünler hep değişir kategorler göre forma göre ürünler
+bir sayfa diğerleride layoutun içindeki elemanlar olsun.
+
+layout paketi içerisine --> Navi.js, Categories.js ve CartSummary.js dosyları oluşturduk. Bunlara jxs'de diyebiliriz, bir fark yok. O yüzden bunları
+jsx'e çevirdik react yazıyoruz diyebiliriz.
+
+Defterdeki şekli çiz
