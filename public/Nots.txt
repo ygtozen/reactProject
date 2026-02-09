@@ -19,3 +19,13 @@ layout -> ekranlar gibi
  Bu Dashboad componentini APP içinde çağıralım.
  import Dashboard from './layout/Dashboard';
  <Dashboard /> bu şekilde çağırabiliriz import'u ve çağırma şekli
+
+--------------------------------
+telarikc kendo --> kurumsal projelerde kullanılıyor genelde
+devexpress -- css kütüphanesi
+
+semantic ui react --> css kütüphanesi
+npm install semantic-ui-react semantic-ui-css komutu kurulum yapıyoruz
+
+Dashboad'a bir butona ekledik sitede göründüğü gibi gelmesi içinde import 'semantic-ui-css/semantic.min.css';
+importunu ekledik.
