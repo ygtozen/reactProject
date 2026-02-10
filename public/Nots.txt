@@ -65,3 +65,39 @@ semantic ui 16 eşit parçaya böler
       </Grid>   --> width ile parçalıyabiliyoruz
 
       3.15.16 css tasarımlarına devam ediliyor
+
+services paketi oluşturduj --> api isteklerimizi veya business kodları burada yazılacak
+
+import axios from 'axios';
+
+export default class ProductService {
+    getProducts() {
+        return axios.get("http://localhost:8080/api/products/getall") 
+    }
+}
+
+ProductList sayfası bir data tutucak
+
+hook --> 
+const [products, setProduts] = useState([])
+useState bize bir nesne döndürüyor onuda districtur edicez, bir data bir fonksiyon dönüyor , benim produtcs diye bir datam var bu sayfada onu kullanıcam 
+default değeri boş bir array bu produtcs'ı değiştmek içinde setProduts'ı kullanıyorum buda hook bilgisi oluyor
+* produtcs'dan data gelecek
+
+tableRow'u gelen ürün sayısı kadar tekrar etmem gerekiyor
+products.map(product => ()) --> bir jsx üret ve onu döndür demek
+
+componentDidMount --> bunun yerine hook kullanıyoruz
+
+useEffect --> life cycle hook u burada çözüyoruz, bu bir fonksiyon, içeriye bir fonksiyon geiyoruz, arrwo function geçebiliriz kısacası component yüklendiğinde
+yapılmasını istediğimiz kodu bu blok içerisine yazıyoruz
+useEffect(() => {
+    
+  }) --> sayfa yüklendiğinde bu kod çalışıyor
+
+  productService.getProducts() --> bu bize promis diye bir yapı döndürüyor, başarılı olursa then() başarısız olursa catch()
+
+  cors hatası backend izin verimiyor demek oluyor, backend tanımadığı kaynaklara destek vermiyor backend'de izin vermemiz gerekiyor
+  ProductController'da @CrossOring verdik 
+
+  react key değeri istiyoru o yüzde productId'yi verdik
