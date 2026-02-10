@@ -45,3 +45,8 @@ Defterdeki şekli çiz
 Semantic ui içerisinden bir menü bulduk ve içerisini kopyalayıp Navi içerisine yapıştırdık
 
 2.20.36 devam edilcek semantic ui menü eklendi.
+
+inverted menüye --> menüyü siyah yapıştırdı
+fixed --> menü yukarıda sabit kalacak yukarı aşağı inse bile sabit kalcak
+
+Menünün kendisini değil elemenlarını container içine ekledik elemanları ortaladı.
