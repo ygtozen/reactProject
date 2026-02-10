@@ -50,3 +50,18 @@ inverted menüye --> menüyü siyah yapıştırdı
 fixed --> menü yukarıda sabit kalacak yukarı aşağı inse bile sabit kalcak
 
 Menünün kendisini değil elemenlarını container içine ekledik elemanları ortaladı.
+
+semantic ui 16 eşit parçaya böler
+<Grid>
+        <GridRow>
+          <GridColumn width={4}>
+            <Categories />
+          </GridColumn>
+
+          <GridColumn width={12}>
+            <ProductList />
+          </GridColumn>
+        </GridRow>
+      </Grid>   --> width ile parçalıyabiliyoruz
+
+      3.15.16 css tasarımlarına devam ediliyor

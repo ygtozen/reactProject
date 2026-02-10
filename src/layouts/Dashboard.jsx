@@ -1,12 +1,22 @@
 import React from 'react'
 import ProductList from '../pages/ProductList'
 import Categories from './Categories'
+import { GridRow, GridColumn, Grid } from 'semantic-ui-react'
 
 export default function Dashboard() {
   return (
     <div>
-      <Categories />
-      <ProductList />
+      <Grid>
+        <GridRow>
+          <GridColumn width={4}>
+            <Categories />
+          </GridColumn>
+
+          <GridColumn width={12}>
+            <ProductList />
+          </GridColumn>
+        </GridRow>
+      </Grid>
     </div>
   )
 }
