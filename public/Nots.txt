@@ -119,3 +119,10 @@ useEffect(() => {
   signout içine giriş yap ve kayıt ol butonlarını ekledik ve bu componetnleri Navi içinde çağırdık
   Eğer ben sisteme giriş yaptıysam, sadece resim kısmı görüncek
   Eğer ben sistemden çıkış yaptıysam, sadece butonlar görünecek, 
+
+  react ta bir  componentte bir şarta göre data tutucaksak state aklımaza gelecek
+
+  <DropdownItem onClick={props.signOut} text="Çıkış Yap" icon="sign-out" /> buna tıklandığında 
+  {isAuthenticated ? <SingedIn signOut={handleSignOut} bisey="1" /> : <SingedOut />} bu çalışacak props olarak sigOut verdik
+
+  
