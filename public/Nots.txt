@@ -125,4 +125,4 @@ useEffect(() => {
   <DropdownItem onClick={props.signOut} text="Çıkış Yap" icon="sign-out" /> buna tıklandığında 
   {isAuthenticated ? <SingedIn signOut={handleSignOut} bisey="1" /> : <SingedOut />} bu çalışacak props olarak sigOut verdik
 
-  
+  1.34.20
