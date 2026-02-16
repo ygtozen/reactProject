@@ -8,7 +8,6 @@ import {
   TableBody,
   MenuItem,
   Icon,
-  Label,
   Menu,
   Table,
 } from "semantic-ui-react";
@@ -20,7 +19,7 @@ export default function ProductList() {
   useEffect(() => {
     let productService = new ProductService()
     productService.getProducts().then(result => setProducts(result.data.data))
-  })
+  }, [])
 
   return (
     <div>

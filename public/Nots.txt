@@ -101,3 +101,21 @@ useEffect(() => {
   ProductController'da @CrossOring verdik 
 
   react key değeri istiyoru o yüzde productId'yi verdik
+
+  [] sonuna ekledik, bunun sebebi bir tane nesnesin her değişikliğe uğradığında sayfanın render edilmesini istersek array içine yazarak state bilgisni
+  takibini yapıyoruz, aksi taktirder sürekli elemanlar değiştiğinde istek atar. Ürünlerimiz listeleniyor state değiştiği için tekrar tekrar çalışıyor.  
+
+  ---------------------------
+  Video 12
+  
+  bir component'ten alt componente data nasıl taşırız buna bakıcaz.
+  Giriş yapma - register işlemleri yapılacak
+
+  layout içine Sigedın.jsx ve SignedOut.jsx dosyaları eklendi
+
+  React ta iki component arası bilgi geçisi prop lar
+
+  signin içine resim ve menü drowdown ekledik 
+  signout içine giriş yap ve kayıt ol butonlarını ekledik ve bu componetnleri Navi içinde çağırdık
+  Eğer ben sisteme giriş yaptıysam, sadece resim kısmı görüncek
+  Eğer ben sistemden çıkış yaptıysam, sadece butonlar görünecek, 
